@@ -1,2 +1,2 @@
 # CODSOFT
-this repository contains the tasks of web development.
+this repository contains the tasks of web development
