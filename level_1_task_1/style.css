@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #BBE7FE;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    position:relative;
+    z-index: 500;
+    background-color: #3CACAE;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+.icon{
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 600;
+    color: purple;
+}
+.home{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+    border-radius: 5px;
+}
+.home a,.login a{
+    padding: 2px;
+    border-radius: 5px;
+    color: #5E376D;
+}
+.login{
+    width: 20%;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+div{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.main{
+    height: 1500px;
+}
+.sign{
+    height: 80%;
+    width: 30%;
+    background-color: #EFF1DB;
+    color: #5E376D;
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+}
+.sign:hover{
+    color: purple;
+    text-transform: capitalize;
+    background-color: #BBE7FE;
+}
+#home{
+    margin: 5px 10% 5px 10%;
+    background-color: #3CACAE;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+#home div{
+    width: 45%;
+    height: 100%;
+}
+.home_1{
+    padding: 15px;
+    font-size: x-large;
+}
+.home_2{
+    text-align: center;
+    color: purple;
+    background-color: #EFF1DB;
+    margin-top: 75px;
+    border: 10px solid purple;
+    border-radius: 25px;
+    box-shadow: #5E376D;
+
+}
+.home_2{
+    font-size: xx-large;
+    font-weight: 900;
+}
+#abouts{
+    margin: 5px 10% 5px 10%;
+    background-color: #3CACAE;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+.about{
+    width: 45%;
+    font-size: x-large;
+}
+.blogs{
+    width: 45%;
+}
+.blogs ol li{
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 5px;
+}
+h1{
+    color: purple;
+}
+#solutions{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+.sol{
+    margin-top: 5px;
+    width: 20%;
+    border: 3px solid purple;
+    background-color: #EFF1DB;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+footer{
+    margin-top: 15px;
+    height: 150px;
+    background-color: #3CACAE;
+    border-radius: 5px;
+    border: 1px solid purple;
+    text-align: center;
+    padding: 5px;
+}
