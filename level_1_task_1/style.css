@@ -13,12 +13,14 @@ header{
     height: 50px;
     display: flex;
     justify-content: space-between;
-    margin-top: 2px;
     position:relative;
     z-index: 500;
     background-color: #3CACAE;
     border: 1px solid purple;
     border-radius: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .icon{
     width: 30%;
@@ -28,6 +30,9 @@ header{
     font-size: xx-large;
     font-weight: 600;
     color: purple;
+}
+.nav{
+    display: none;
 }
 .home{
     width: 50%;
@@ -41,15 +46,17 @@ header{
 .home a,.login a{
     padding: 2px;
     border-radius: 5px;
-    color: #5E376D;
+    color: purple
 }
 .login{
     width: 20%;
-    border-radius: 15px;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
     font-size: x-large;
+}
+header div .sign{
+    border-radius: 15px;
 }
 div{
     margin-right: 5px;
@@ -71,51 +78,59 @@ div{
     color: purple;
     text-transform: capitalize;
     background-color: #BBE7FE;
+    box-shadow: 2px 4px 28px purple;    
 }
 #home{
-    margin: 5px 10% 5px 10%;
+    margin: 55px 10% 5px 10%;
     background-color: #3CACAE;
     width: 80%;
     display: flex;
     justify-content: space-around;
     border-radius: 15px;
-}
-#home div{
-    width: 45%;
-    height: 100%;
+    flex-wrap: wrap;
 }
 .home_1{
-    padding: 15px;
-    font-size: x-large;
+    padding: 5px;
+    font-size: 1.5em;
+    flex: 1 400px;
 }
 .home_2{
+    width: 300px;
+    height: 200px;
     text-align: center;
     color: purple;
     background-color: #EFF1DB;
-    margin-top: 75px;
-    border: 10px solid purple;
+    margin: 75px 100px 0 100px;
+    border: 7px solid purple;
     border-radius: 25px;
     box-shadow: #5E376D;
 
 }
 .home_2{
-    font-size: xx-large;
+    font-size: 1.8em;
     font-weight: 900;
+}
+.home_2:hover{
+    box-shadow: 2px 4px 28px purple;
 }
 #abouts{
     margin: 5px 10% 5px 10%;
     background-color: #3CACAE;
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    flex-wrap: wrap;
     border-radius: 15px;
 }
 .about{
-    width: 45%;
-    font-size: x-large;
+    width: 400px;
+    font-size: 1.5em;
+    flex-grow: 1;
+    padding: 20px;
 }
 .blogs{
-    width: 45%;
+    width: 400px;
+    flex-grow: 1;
 }
 .blogs ol li{
     border: 1px solid purple;
@@ -128,25 +143,190 @@ h1{
 #solutions{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     margin: 5px 0 5px 0;
 }
 .sol{
     margin-top: 5px;
-    width: 20%;
+    width: 250px;
+    height: 350px;
+    text-align: center;
     border: 3px solid purple;
     background-color: #EFF1DB;
     color: black;
     padding: 5px;
     border-radius: 15px;
 }
+.sol:hover{
+    box-shadow: 2px 4px 28px purple;
+}
+
+#pricing{
+    margin: 10px 10% 10px 10%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.price{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3em;
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EFF1DB;
+    color: black;
+    margin: 5px;
+}
+.price h1{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.basic h1,.basic button{
+    background-color: skyblue;
+}
+.super h1,.super button{
+    background-color: lawngreen;
+}
+.premium h1,.premium button{
+    background-color: gold;
+}
+.price button{
+    width: 50%;
+    height: 40px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
+
+.price:hover,.price button:hover{
+    box-shadow: 2px 4px 28px purple;
+}
 
 footer{
     margin-top: 15px;
-    height: 150px;
     background-color: #3CACAE;
     border-radius: 5px;
     border: 1px solid purple;
     text-align: center;
     padding: 5px;
+}
+footer div{
+    height: 50%;
+}
+.footer_2{
+    padding: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.footer_1{
+    font-size: xx-large;
+    color: purple;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_1 div{
+    margin-left: 10%;
+}
+.ff_2{
+    width: 400px;
+    margin-top: 5px;
+}
+.ff_1{
+    font-size: large;
+}
+
+
+@media  screen and (max-width:1200px) {
+    header .login{
+        font-size: large;
+        align-self: center;
+    }
+}
+@media screen and (max-width:1180px) {
+    #home .home_2{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:950px){
+    header .home a{
+        display: none;
+    }
+    header .home{
+        width: 100px;
+    }
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    header .icon{
+        width: 200%;
+    }
+    header .login{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    #solutions .sol p{
+        display: none;
+    }
+    .sol{
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width:460px) {
+    header .icon{
+        font-size: x-large;
+    }
+    #home .home_2{
+        font-size: large;
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width:300px) {
+    .home_2 h1{
+        display: none;
+    }
+    .home_2{
+        border: 0px;
+        background-color: inherit;
+    }
+    .home_1 p{
+        display: none;
+    }
+    #abouts p,#abouts ol{
+        display: none;
+    }
+    h1{
+        font-size: x-large;
+    }
+    .price h3,h4{
+        display: none;
+    }
+    .price hr{
+        display: none;
+    }
+    .footer_2{
+        display: none;
+    }
+    *{
+        font-size: large;
+    }
+    h1{
+        font-size: medium;
+    }
 }
