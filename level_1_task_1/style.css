@@ -64,8 +64,7 @@ header div .sign{
     border-radius: 15px;
 }
 div{
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 15px 5px 0px 5px;
 }
 .sign{
     height: 80%;
@@ -334,6 +333,6 @@ footer div{
         font-size: medium;
     }
 }
-footer a:hover{
-    font-size: 1.1em;
+.ff_2 a:hover{
+    box-shadow: 0 0 2rem purple;
 }
