@@ -1,0 +1,31 @@
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #5FBDFF;
+    --text-color:  #fff;
+    --main-color: #7B66FF;   
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 0 10% 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+span{
+    color: var(--main-color);
+}
+h3 span{
+    color: var(--second-bg-color);
+}
+img{
+    width: 35wh;
+    margin-right: 15%;
+    height: 100%; 
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem var(--main-color);
+}
+img:hover{
+    box-shadow: 0 0 1rem var(--second-bg-color);
+}
