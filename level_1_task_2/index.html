@@ -3,14 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@1,300&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1><span>Port</span>folio</h1>
-    <h3><span>Web</span> Developer</h3>
-    <img src="profile.jpg">
-    <img src="about.jpg">
+    <header>
+        <h1><span>Port</span>folio</h1>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <navbar class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </navbar>
+    </header>
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me!</h3>
+            <h1>D V Naga Mahindra</h1>
+            <h3>And I am a <span>Full Stack Developer</span></h3>
+            <p>
+                I am currently persuing my B.Tech 3rd year in KSRM colleg of Engineering in Computer Science Engineering and i am very much interested in Web Development.
+            </p>  
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mahindra-d-523abb230/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/blueeyeneck" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="profile.jpg" alt="img">    
+        </div>    
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="about.jpg">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me!</span></h2>
+            <h3>Student</h3>
+            <p>
+                I am studying b.tech computer Science and Engineering 3rd year in KSRM college of Engineering in kadapa AP.<br>
+                in free time i will do commpetitive coding in different Platforms like hackerrank, skillrack, leetcode, geeks for geerks and codechef.<br>
+                I have solved <span>2500+</span> progrms in skillrack<br>
+                In HacerRack, I am <span>5&star;</span>Coder in python,Data Structures<br>
+                Recently i have completed my Full Stack Development Course offered by <span>Apna College</span><br>
+                Currently i am doing an internship in <span>Codsoft</span> on Web Development for 1 month.
+            </p>
+            <h2><span>Profiles</span> in coding platform:-</h2>
+            <ul>
+                <li><a href="https://www.skillrack.com/faces/resume.xhtml?id=379759&key=0d9434f4cd0a13eec3c59754bff80a31f4a011a4" target="_blank"><span>Skill</span> Rack</a></li>
+                <li><a href="https://www.hackerrank.com/profile/d_mahindra040101" target="_blank"><span>Hacker</span> Rank</a></li>
+                <li><a href="https://leetcode.com/user2500Lu/" target="_blank"><span>Leet</span> code</a></li>
+                <li><a href="https://auth.geeksforgeeks.org/user/dmahindra/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="_blank"><span>Geeks</span> for Geeks</a></li>
+                <li><a href="https://www.codechef.com/users/mahindra04010" target="_blank"><span>Code</span> Chef</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1><span>S</span>kills</h1>
+        <div class="skill-content">
+            <div class="skill-left">
+                <h2><span>Technical</span> Skills</h2>
+                <div class="t-1">
+                    <h3><span>Full Stack Development</span> : 80%</h3>
+                    <ul>
+                        <li>HTML, CSS, Java Script</li>
+                        <li>Node.js, Express.js, React.js</li>
+                        <li>MongoDB, SQl</li>
+                        <li>Bootstrap, Tailwind, Material UI</li>
+                    </ul>
+                </div>
+                <div class="t-2">
+                    <h3><span>Data Science</span> : 65%</h3>
+                    <ul>
+                        <li>Advance Python</li>
+                        <li>Pandas,Numpy</li>
+                        <li>Power Bi, Tabluea</li>
+                    </ul>
+                </div>
+                <div class="t-3">
+                    <h3><span>Programming Skills</span> : 75%</h3>
+                    <ul>
+                        <li>C,C++,Python</li>
+                        <li>Java for Dat Structure</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-right">
+                <h2><span>Soft</span> Skills</h2>
+                <ul>
+                    <li>Time management</li>
+                    <li>Hard Working</li>
+                    <li>Confidence</li>
+                    <li>LeaderShip Skills</li>
+                    <li>Disciplie</li>
+                    <li>Dedicated</li>
+                    <li>Pasionated</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+
+    </section>
 
     <script src="app.js"></script>
 </body>
